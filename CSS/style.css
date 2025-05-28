@@ -1,0 +1,259 @@
+/* Estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: transparent;
+    padding: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.topics-buttons{
+    display: flex;
+}
+.header-info{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Selector de lenguaje */
+.language-tabs, .theme-selector {
+    display: inline-flex;
+    overflow: hidden;
+    margin-left: 10px;
+    gap: 0;
+}
+
+/* Tab shape utility classes */
+.tab-left {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* Elimina margin-left */
+}
+.tab-mid {
+    border-radius: 0;
+    /* Elimina margin-left y margin-right */
+}
+.tab-right {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* Elimina margin-right */
+}
+
+/* Tab base style (for both language and theme buttons) */
+.tab {
+    padding: 5px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.2s;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0; /* Asegura que no haya separación entre tabs */
+}
+
+.tab.active {
+    background-color: #1976d2;
+    color: #fff;
+}
+.tab.active:hover {
+    background-color: #63a4ff;
+    color: #fff;
+}
+
+body{
+    display: grid;
+    /* Mantenemos el header en la parte superior y el footer en la parte inferior */
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #f0f0f0;
+    transition: all .3s ease;
+}
+
+main {
+    padding: 15px;
+    padding-top: 0;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: width 0.3s;
+}
+
+/* Responsivo: en pantallas menores a 900px, main ocupa todo el ancho, al igual que los botones del header */
+@media (max-width: 900px) {
+    .header-info{
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+button {
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 0;
+}
+button:active{
+    scale: .98;
+}
+
+footer{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos modo claro */
+body.light {
+    background: #f0f0f0;
+    color: #222;
+}
+body.light button {
+    background-color: black;
+    color: white;
+}
+body.light button:hover {
+    background-color: #333;
+    color: white;
+}
+body.light header {
+    background: linear-gradient(
+        to bottom,
+        rgba(240,240,240,0.85) 0%,
+        rgba(240,240,240,0.60) 70%,
+        rgba(240,240,240,0.20) 85%,
+        rgba(240,240,240,0.00) 100%
+    );
+}
+body.light footer {
+    background: linear-gradient(
+        to top,
+        #b0b0b0 0%,
+        #d3d3d3 85%,
+        rgba(240,240,240,0.0) 100%
+    );
+    color: #222;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+body.light .tab.active {
+    background-color: #1976d2;
+    color: #fff;
+}
+body.light .tab.active:hover {
+    background-color: #63a4ff;
+    color: #fff;
+}
+
+/* Estilos modo oscuro */
+body.dark {
+    background: #222;
+    color: #fff;
+}
+body.dark button {
+    background-color: #f0f0f0;
+    color: black;
+}
+body.dark button:hover {
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+body.dark header {
+    background: linear-gradient(
+        to bottom,
+        rgba(34,34,34,0.85) 0%,
+        rgba(34,34,34,0.60) 70%,
+        rgba(34,34,34,0.20) 85%,
+        rgba(34,34,34,0.00) 100%
+    );
+}
+body.dark footer {
+    background: linear-gradient(
+        to top,
+        #23272f 0%,
+        #393e46 85%,
+        rgba(34,34,34,0.0) 100%
+    );
+    color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+body.dark .tab.active {
+    background-color: #3949ab;
+    color: #fff;
+}
+body.dark .tab.active:hover {
+    background-color: #6f74dd;
+    color: #fff;
+}
+
+
+/* Estilos modo azul */
+body.blue {
+    background: #122845;
+    color: #fff;
+}
+body.blue button {
+    background-color: #546587;
+    color: white;
+}
+body.blue button:hover {
+    background-color: #334766;
+    color: white;
+}
+body.blue header {
+    background: linear-gradient(
+        to bottom,
+        rgba(18,40,69,0.85) 0%,
+        rgba(18,40,69,0.60) 70%,
+        rgba(18,40,69,0.20) 85%,
+        rgba(18,40,69,0.00) 100%
+    );
+}
+body.blue footer {
+    background: linear-gradient(
+        to top,
+        #1a335a 0%,
+        #334766 85%,
+        rgba(18,40,69,0.0) 100%
+    );
+    color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+body.blue .tab.active {
+    background-color: #1e5daa;
+    color: #fff;
+}
+body.blue .tab.active:hover {
+    background-color: #0f4285;
+    color: #fff;
+}
