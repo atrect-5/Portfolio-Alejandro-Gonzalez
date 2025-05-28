@@ -11,8 +11,8 @@ header {
     top: 0;
     z-index: 100;
     background: transparent;
-    padding: 10px;
-    padding-bottom: 15px;
+    padding: 20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
 }
@@ -20,7 +20,8 @@ header {
     display: flex;
 }
 .header-info{
-    width: 70%;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -84,30 +85,11 @@ body{
 main {
     padding: 15px;
     padding-top: 0;
-    width: 70%;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     box-sizing: border-box;
     transition: width 0.3s;
-}
-
-/* Responsivo: en pantallas menores a 900px, main ocupa todo el ancho, al igual que los botones del header */
-@media (max-width: 900px) {
-    .header-info{
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        justify-content: space-between;
-    }
-    main {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 }
 
 button {
@@ -123,11 +105,70 @@ button:active{
 }
 
 footer{
+    margin-top: 150px;
     background-color: gray;
     color: white;
-    padding: 10px;
+    padding: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 95%;
+    margin: 32px auto;
+    background: linear-gradient(
+        to right,
+        var(--hr-gradient-fade, rgba(0,0,0,0)) 0%,
+        var(--hr-gradient-start, #bbb) 8%,
+        var(--hr-gradient-main, #888) 20%,
+        var(--hr-gradient-main, #888) 80%,
+        var(--hr-gradient-end, #bbb) 92%,
+        var(--hr-gradient-fade, rgba(0,0,0,0)) 100%
+    );
+    border-radius: 2px;
+    opacity: 1;
+    transition: background 0.3s;
+}
+a{
+    font-weight: 400;
+}
+
+/* Responsividad para el header y tabs */
+@media (max-width: 900px) {
+    .header-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .topics-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .control-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 5px;
+    }
+    .tab {
+        padding: 5px 10px;
+        font-size: 0.95em;
+    }
+    .theme-selector, .language-tabs {
+        margin-left: 0;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 430px) {
+    .tab {
+        padding: 4px 6px;
+        font-size: 0.85em;
+    }
 }
 
 /* Estilos modo claro */
@@ -156,14 +197,24 @@ body.light footer {
     background: linear-gradient(
         to top,
         #b0b0b0 0%,
-        #d3d3d3 85%,
+        #d3d3d3 90%,
         rgba(240,240,240,0.0) 100%
     );
     color: #222;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
-
+body.light a {
+    color: #222;
+}
+body.light .tab {
+    background-color: #dbdbdb;
+    color: #222;
+}
+body.light .tab:hover {
+    background-color: #cccccc;
+    color: #222;
+}
 body.light .tab.active {
     background-color: #1976d2;
     color: #fff;
@@ -171,6 +222,13 @@ body.light .tab.active {
 body.light .tab.active:hover {
     background-color: #63a4ff;
     color: #fff;
+}
+
+body.light hr {
+    --hr-gradient-fade: rgba(240,240,240,0);
+    --hr-gradient-start: #e0e0e0;
+    --hr-gradient-main: #a9a9a9;
+    --hr-gradient-end: #e0e0e0;
 }
 
 /* Estilos modo oscuro */
@@ -199,12 +257,23 @@ body.dark footer {
     background: linear-gradient(
         to top,
         #23272f 0%,
-        #393e46 85%,
+        #393e46 90%,
         rgba(34,34,34,0.0) 100%
     );
     color: #fff;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+}
+body.dark a {
+    color: #fff;
+}
+body.dark .tab {
+    background-color: #353535;
+    color: white;
+}
+body.dark .tab:hover {
+    background-color: #444444;
+    color: white;
 }
 body.dark .tab.active {
     background-color: #3949ab;
@@ -214,7 +283,12 @@ body.dark .tab.active:hover {
     background-color: #6f74dd;
     color: #fff;
 }
-
+body.dark hr {
+    --hr-gradient-fade: rgba(34,34,34,0);
+    --hr-gradient-start: #444;
+    --hr-gradient-main: #d9d9d9;
+    --hr-gradient-end: #444;
+}
 
 /* Estilos modo azul */
 body.blue {
@@ -242,12 +316,23 @@ body.blue footer {
     background: linear-gradient(
         to top,
         #1a335a 0%,
-        #334766 85%,
+        #334766 90%,
         rgba(18,40,69,0.0) 100%
     );
     color: #fff;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+}
+body.blue a {
+    color: #fff;
+}
+body.blue .tab {
+    background-color: #23395d;
+    color: white;
+}
+body.blue .tab:hover {
+    background-color: #335080 ;
+    color: white;
 }
 body.blue .tab.active {
     background-color: #1e5daa;
@@ -256,4 +341,10 @@ body.blue .tab.active {
 body.blue .tab.active:hover {
     background-color: #0f4285;
     color: #fff;
+}
+body.blue hr {
+    --hr-gradient-fade: rgba(18,40,69,0);
+    --hr-gradient-start: #23395d;
+    --hr-gradient-main: #1e5daa;
+    --hr-gradient-end: #23395d;
 }
