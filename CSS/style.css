@@ -27,6 +27,15 @@ header {
     justify-content: space-between;
 }
 
+.open-to-work{
+    width: fit-content;
+    border: 1.5px solid currentColor;
+    padding: 3px 14px;
+    border-radius: 500px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
 /* Selector de lenguaje */
 .language-tabs, .theme-selector {
     display: inline-flex;
@@ -90,6 +99,55 @@ main {
     margin: 0 auto;
     box-sizing: border-box;
     transition: width 0.3s;
+}
+
+.location{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 10px;
+    border-radius: 500px;
+    transition: all .3s ease;
+}
+
+.profile img{
+    width: 200px;
+}
+
+img.icon{
+    width: 24px;
+    cursor: pointer;
+}
+img.no-pointer{
+    cursor: default;
+}
+    .no-padding{
+    padding: 0 !important;
+}
+
+.img-text{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 10px;
+    border-radius: 500px;
+    transition: all .3s ease;
+}
+
+.img-text .icon {
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    background: transparent;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background 0.3s;
 }
 
 button {
@@ -207,6 +265,12 @@ body.light footer {
 body.light a {
     color: #222;
 }
+body.light .open-to-work {
+    border-color: #219a4b;
+    background-color: #e6f7ed;
+    color: #219a4b;
+}
+
 body.light .tab {
     background-color: #dbdbdb;
     color: #222;
@@ -222,6 +286,27 @@ body.light .tab.active {
 body.light .tab.active:hover {
     background-color: #63a4ff;
     color: #fff;
+}
+
+/* Estilos img-text para modo claro */
+body.light .img-text {
+    border: 1px solid #1976d2;
+    background-color: #f7fafd;
+    color: #1976d2;
+}
+body.light .img-text:hover {
+    border: 1px solid #63a4ff;
+    background-color: #e3f0fd;
+    color: #1976d2;
+}
+/* Estilos img-text para modo claro */
+body.light .img-text .icon {
+    border-color: #1976d2;
+    background: #fff;
+}
+body.light .img-text:hover .icon {
+    border-color: #63a4ff;
+    background: #e3f0fd;
 }
 
 body.light hr {
@@ -267,6 +352,11 @@ body.dark footer {
 body.dark a {
     color: #fff;
 }
+body.dark .open-to-work {
+    border-color: #4caf50;
+    background-color: #1b2b1d;
+    color: #7fff9f;
+}
 body.dark .tab {
     background-color: #353535;
     color: white;
@@ -283,6 +373,28 @@ body.dark .tab.active:hover {
     background-color: #6f74dd;
     color: #fff;
 }
+
+/* Estilos img-text para modo oscuro */
+body.dark .img-text {
+    border: 1px solid #3949ab;
+    background-color: #23243a;
+    color: #bfc7ff;
+}
+body.dark .img-text:hover {
+    border: 1px solid #6f74dd;
+    background-color: #2c2e4a;
+    color: #e0e6ff;
+}
+/* Estilos img-text para modo oscuro */
+body.dark .img-text .icon {
+    border-color: #3949ab;
+    background: #18192b;
+}
+body.dark .img-text:hover .icon {
+    border-color: #6f74dd;
+    background: #23243a;
+}
+
 body.dark hr {
     --hr-gradient-fade: rgba(34,34,34,0);
     --hr-gradient-start: #444;
@@ -326,6 +438,11 @@ body.blue footer {
 body.blue a {
     color: #fff;
 }
+body.blue .open-to-work {
+    border-color: #43e68b;
+    background-color: #183c2e;
+    color: #43e68b;
+}
 body.blue .tab {
     background-color: #23395d;
     color: white;
@@ -342,6 +459,28 @@ body.blue .tab.active:hover {
     background-color: #0f4285;
     color: #fff;
 }
+
+/* Estilos img-text para modo azul */
+body.blue .img-text {
+    border: 1px solid #1e5daa;
+    background-color: #1a335a;
+    color: #7ec3ff;
+}
+body.blue .img-text:hover {
+    border: 1px solid #0f4285;
+    background-color: #23395d;
+    color: #b3d8ff;
+}
+/* Estilos img-text para modo azul */
+body.blue .img-text .icon {
+    border-color: #1e5daa;
+    background: #122845;
+}
+body.blue .img-text:hover .icon {
+    border-color: #0f4285;
+    background: #1a335a;
+}
+
 body.blue hr {
     --hr-gradient-fade: rgba(18,40,69,0);
     --hr-gradient-start: #23395d;

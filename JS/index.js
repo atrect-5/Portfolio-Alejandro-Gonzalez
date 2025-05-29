@@ -59,11 +59,11 @@ document.querySelectorAll('.language-tabs .tab')[1].onclick = function() { setLa
 setLanguage(lang)
 setTheme(currentTheme)
 
-// Activar tab según la sección visible
+// Lista de secciones de la app
 const sectionTabMap = [
     { selector: '.profile', tab: '[data-target="profile"]' },
-    { selector: '.skills', tab: '[data-target="skills"]' },
     { selector: '.about-me', tab: '[data-target="about-me"]' },
+    { selector: '.skills', tab: '[data-target="skills"]' },
     { selector: '.projects', tab: '[data-target="projects"]' },
     { selector: '.education', tab: '[data-target="education"]' }
 ]
@@ -84,6 +84,7 @@ document.querySelectorAll('.topics-buttons .tab').forEach(tab => {
     }
 })
 
+// Activa el tab según la sección visible
 function activateTabOnScroll() {
     const scrollY = window.scrollY || window.pageYOffset
     const header = document.querySelector('header')
