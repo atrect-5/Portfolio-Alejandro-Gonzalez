@@ -44,23 +44,18 @@ header {
     gap: 0;
 }
 
-/* Tab shape utility classes */
 .tab-left {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    /* Elimina margin-left */
 }
 .tab-mid {
     border-radius: 0;
-    /* Elimina margin-left y margin-right */
 }
 .tab-right {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    /* Elimina margin-right */
 }
 
-/* Tab base style (for both language and theme buttons) */
 .tab {
     padding: 5px 16px;
     background-color: #f0f0f0;
@@ -69,7 +64,7 @@ header {
     transition: background-color 0.3s, color 0.2s;
     cursor: pointer;
     font-weight: normal;
-    margin: 0; /* Asegura que no haya separación entre tabs */
+    margin: 0;
 }
 
 .tab.active {
@@ -151,6 +146,22 @@ img.no-pointer{
     justify-content: center;
     object-fit: contain; 
     transition: border-color 0.3s, background 0.3s;
+}
+
+
+.cv-buttons-container{
+    display: flex;
+}
+.CV_link .cv-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid currentColor;
+}
+
+.CV_link .cv-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
 }
 
 .img-text .hint {
