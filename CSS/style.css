@@ -111,7 +111,7 @@ main {
     transition: all .3s ease;
 }
 
-.profile img{
+.profile .img-profile{
     width: 200px;
 }
 
@@ -134,20 +134,46 @@ img.no-pointer{
     padding-right: 10px;
     border-radius: 500px;
     transition: all .3s ease;
+    position: relative;
+    margin-bottom: 5px;
 }
 
 .img-text .icon {
-    border-radius: 50%;
+    border-radius: 16px;
     border: 1.5px solid currentColor;
     background: transparent;
     padding: 4px;
-    width: 32px;
+    width: 40px;
     height: 32px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain; 
     transition: border-color 0.3s, background 0.3s;
+}
+
+.img-text .hint {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 5px;
+    background: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    transition: opacity 0.2s;
+}
+
+.img-text:hover .hint {
+    opacity: 0.95;
+    pointer-events: auto;
 }
 
 button {
@@ -287,11 +313,9 @@ body.light .tab.active:hover {
     background-color: #63a4ff;
     color: #fff;
 }
-
-/* Estilos img-text para modo claro */
 body.light .img-text {
     border: 1px solid #1976d2;
-    background-color: #f7fafd;
+    background-color: #e8e8e8;
     color: #1976d2;
 }
 body.light .img-text:hover {
@@ -299,10 +323,9 @@ body.light .img-text:hover {
     background-color: #e3f0fd;
     color: #1976d2;
 }
-/* Estilos img-text para modo claro */
 body.light .img-text .icon {
     border-color: #1976d2;
-    background: #fff;
+    background: #e6e6e6;
 }
 body.light .img-text:hover .icon {
     border-color: #63a4ff;
@@ -374,7 +397,6 @@ body.dark .tab.active:hover {
     color: #fff;
 }
 
-/* Estilos img-text para modo oscuro */
 body.dark .img-text {
     border: 1px solid #3949ab;
     background-color: #23243a;
@@ -385,7 +407,6 @@ body.dark .img-text:hover {
     background-color: #2c2e4a;
     color: #e0e6ff;
 }
-/* Estilos img-text para modo oscuro */
 body.dark .img-text .icon {
     border-color: #3949ab;
     background: #18192b;
@@ -460,7 +481,6 @@ body.blue .tab.active:hover {
     color: #fff;
 }
 
-/* Estilos img-text para modo azul */
 body.blue .img-text {
     border: 1px solid #1e5daa;
     background-color: #1a335a;
@@ -471,7 +491,6 @@ body.blue .img-text:hover {
     background-color: #23395d;
     color: #b3d8ff;
 }
-/* Estilos img-text para modo azul */
 body.blue .img-text .icon {
     border-color: #1e5daa;
     background: #122845;
