@@ -1,21 +1,10 @@
+/******************************************************
+ * Tema de la pagina
+******************************************************/
+
 // Lista el nombre e los temas
 const themes = ['light', 'dark', 'blue']
 let currentTheme = 'dark'
-let lang = 'es'
-const texts = {
-    es: {
-        welcome: 'Bienvenido a mi portafolio profesional',
-        langBtn: 'En',
-        themeBtn: 'Cambiar tema',
-        themeNames: ['Claro', 'Oscuro', 'Azul']
-    },
-    en: {
-        welcome: 'Welcome to my professional portfolio',
-        langBtn: 'Es',
-        themeBtn: 'Change theme',
-        themeNames: ['Light', 'Dark', 'Blue']
-    }
-}
 
 // Funcion para cambiar el tema de la pagina
 function setTheme(theme) {
@@ -43,6 +32,26 @@ document.querySelectorAll('.theme-selector .tab')[0].onclick = function() { setT
 document.querySelectorAll('.theme-selector .tab')[1].onclick = function() { setTheme('dark') }
 document.querySelectorAll('.theme-selector .tab')[2].onclick = function() { setTheme('blue') }
 
+/******************************************************
+ * Idioma de la pagina
+******************************************************/
+
+let lang = 'es'
+const texts = {
+    es: {
+        welcome: 'Bienvenido a mi portafolio profesional',
+        langBtn: 'En',
+        themeBtn: 'Cambiar tema',
+        themeNames: ['Claro', 'Oscuro', 'Azul']
+    },
+    en: {
+        welcome: 'Welcome to my professional portfolio',
+        langBtn: 'Es',
+        themeBtn: 'Change theme',
+        themeNames: ['Light', 'Dark', 'Blue']
+    }
+}
+
 // Funcion para cambiar el lenguaje de la pagina
 function setLanguage(selectedLang) {
     lang = selectedLang
@@ -67,6 +76,11 @@ document.querySelectorAll('.language-tabs .tab')[1].onclick = function() { setLa
 // Inicializa los textos de los botones de tema según el idioma actual
 setLanguage(lang)
 setTheme(currentTheme)
+
+
+/******************************************************
+ * Navegador del header
+******************************************************/
 
 // Lista de secciones de la app
 const sectionTabMap = [
@@ -120,7 +134,7 @@ function activateTabOnScroll() {
     }
 }
 
-
+// Se agrega la funcion de activar el tab correcpondiente al evento scroll
 window.addEventListener('scroll', activateTabOnScroll)
 
 // Llama una vez al cargar para el estado inicial
