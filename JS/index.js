@@ -27,6 +27,15 @@ function setTheme(theme) {
     if(theme === 'light') themeTabs[0].classList.add('active')
     if(theme === 'dark') themeTabs[1].classList.add('active')
     if(theme === 'blue') themeTabs[2].classList.add('active')
+    updateIconsForTheme(theme)
+}
+
+// Cambia los iconos según el tema
+function updateIconsForTheme(themeName) {
+    document.querySelectorAll('img[data-icon]').forEach(img => {
+        const base = img.getAttribute('data-icon')
+        img.src = `./assets/${base}_${themeName}.png`
+    })
 }
 
 // Se asigna la funcion para cambiar el tema a los botones
