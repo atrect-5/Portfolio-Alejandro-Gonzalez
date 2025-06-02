@@ -6,6 +6,7 @@
     <title>Alejandro Gonzalez</title>
     <link rel="icon" type="image/jpeg" href="./assets/a.jpg">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="./JS/index.js" defer></script>
 </head>
 <body class="dark">
@@ -35,54 +36,56 @@
         <h1 id="welcome">Bienvenido a mi portafolio profesional</h1>
         <hr>
         <section class="profile">
-            <h2>Alejandro Gonzalez</h2>
-            <img src="./assets/a.jpg" alt="perfil" class="img-profile">
-            <h3>Desarrollador de software Jr</h3>
-            <p class="open-to-work">Disponible para trabajar</p>
-            <div class="location">
-                <img src="./assets/icon_location_dark.png" alt="location_icon" class="icon no-pointer" data-icon="icon_location">
-                Zapopan, Jalisco, México
-            </div>
-            <div class="img-text contact">
-                <!-- Abre el cliente de correo -->
-                <a href="mailto:alex1123.nel@gmail.com" target="_blank">    
-                    <img src="./assets/icon_email_dark.png" alt="email_icon" class="icon" data-icon="icon_email">
-                </a>
-                alex1123.nel@gmail.com
-                <div class="hint">Haz clic en el icono para mandar correo</div>
-            </div>
-            <div class="img-text github_link">
-                <!-- Abre mi perfil de github -->
-                <a href="https://github.com/atrect-5" target="_blank">
-                    <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
-                </a>
-                atrect-5
-                <div class="hint">Haz clic en el icono para ir github</div>
-            </div>
-            <div class="CV_link img-text">
-                <div class="cv-buttons-container">
-                    <!-- Ver CV en nueva pestaña -->
-                    <a href="./Alejandro_Gonzalez_CV.pdf" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/icon_cv_dark.png" alt="cv_icon" class="icon cv-left" data-icon="icon_cv">
-                    </a>
-                    <!-- Descargar CV directamente -->
-                    <a href="./Alejandro_Gonzalez_CV.pdf" download="Alejandro_Gonzalez_CV.pdf">
-                        <img src="./assets/icon_download_dark.png" alt="cv_download" class="icon cv-right" data-icon="icon_download">
-                    </a>
+            <div class="profile-container">
+                <h2>Alejandro Gonzalez</h2>
+                <img src="./assets/a.jpg" alt="perfil" class="img-profile">
+                <h3>Desarrollador de software Jr</h3>
+                <p class="open-to-work">Disponible para trabajar</p>
+                <div class="location">
+                    <img src="./assets/icon_location_dark.png" alt="location_icon" class="icon no-pointer" data-icon="icon_location">
+                    Zapopan, Jalisco, México
                 </div>
-                CV
-                <div class="hint">Haz clic en el icono para ver/descargar CV</div>
-            </div>
-            <div class="linkedin_link img-text no-padding">
-                <!-- Abre mi perfil de linkedin -->
-                <a href="https://www.linkedin.com/in/atrect5-alejandro-gonzalez" target="_blank">
-                    <img src="./assets/icon_linkedin_dark.png" alt="linkedin_icon" class="icon" data-icon="icon_linkedin">
-                </a>
-                <div class="hint">Haz clic en el icono para ir a linkedin</div>
+                <div class="img-text contact">
+                    <!-- Abre el cliente de correo -->
+                    <a href="mailto:alex1123.nel@gmail.com" target="_blank">    
+                        <img src="./assets/icon_email_dark.png" alt="email_icon" class="icon" data-icon="icon_email">
+                    </a>
+                    alex1123.nel@gmail.com
+                    <div class="hint">Haz clic en el icono para mandar correo</div>
+                </div>
+                <div class="img-text github_link">
+                    <!-- Abre mi perfil de github -->
+                    <a href="https://github.com/atrect-5" target="_blank">
+                        <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
+                    </a>
+                    atrect-5
+                    <div class="hint">Haz clic en el icono para ir github</div>
+                </div>
+                <div class="CV_link img-text">
+                    <div class="cv-buttons-container">
+                        <!-- Ver CV en nueva pestaña -->
+                        <a href="./Alejandro_Gonzalez_CV.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icon_cv_dark.png" alt="cv_icon" class="icon cv-left" data-icon="icon_cv">
+                        </a>
+                        <!-- Descargar CV directamente -->
+                        <a href="./Alejandro_Gonzalez_CV.pdf" download="Alejandro_Gonzalez_CV.pdf">
+                            <img src="./assets/icon_download_dark.png" alt="cv_download" class="icon cv-right" data-icon="icon_download">
+                        </a>
+                    </div>
+                    CV
+                    <div class="hint">Haz clic en el icono para ver/descargar CV</div>
+                </div>
+                <div class="linkedin_link img-text no-padding">
+                    <!-- Abre mi perfil de linkedin -->
+                    <a href="https://www.linkedin.com/in/atrect5-alejandro-gonzalez" target="_blank">
+                        <img src="./assets/icon_linkedin_dark.png" alt="linkedin_icon" class="icon" data-icon="icon_linkedin">
+                    </a>
+                    <div class="hint">Haz clic en el icono para ir a linkedin</div>
+                </div>
             </div>
         </section>
         <section class="about-me">
-            <h2>Sobre mi</h2>
+            <h2>Sobre mi</h2><br>
             <p>
                 Soy desarrollador full stack junior, con interés en participar en todas las etapas del desarrollo, desde el frontend hasta el backend.
             </p>
@@ -93,37 +96,71 @@
         </section>
         <hr>
         <section class="skills">
-            <h2>Principales tecnologias que manejo</h2>
+            <h2>Stack Tecnológico</h2><br>
             <ul>
                 <li>
-                    <strong>
+                    <h4>
                         Frontend:
-                    </strong>
-                    HTML · CSS · JavaScript · React · Angular
+                    </h4>
+                    
+                        <span class="tool-icon-container">
+                            <i class="fab fa-html5"></i> HTML
+                        </span>
+                        <span class="tool-icon-container">
+                            <i class="fab fa-css3-alt"></i> CSS
+                        </span>
+                        <span class="tool-icon-container">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                        <span class="tool-icon-container">
+                            <i class="fab fa-react"></i> React
+                        </span>
+                        <span class="tool-icon-container">
+                            <i class="fab fa-angular"></i> Angular
+                        </span>
+                    
                 </li>
                 <li>
-                    <strong>
+                    <h4>
                         Backend: 
-                    </strong>
-                    Node.js · Express
+                    </h4>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-node-js"></i> Node.js
+                    </span>
                 </li>
                 <li>
-                    <strong>
+                    <h4>
                         Bases de Datos: 
-                    </strong>
-                    MongoDB · InfluxDB · MariaDB
+                    </h4>
+                    <span class="tool-icon-container">
+                        <i class="fa-solid fa-leaf"></i> MongoDB
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fa-solid fa-hourglass-half"></i> InfluxDB
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fa fas fa-database"></i> MariaDB
+                    </span>
                 </li>
                 <li>
-                    <strong>
+                    <h4>
                         Herramientas: 
-                    </strong>
-                    Git · GitHub · Postman
+                    </h4>
+                    <div class="tool-icon-container">
+                        <i class="fa-brands fa-git-alt"></i> Git
+                    </div>
+                    <div class="tool-icon-container">
+                        <i class="fab fa-github"></i> GitHub
+                    </div>
+                    <div class="tool-icon-container">
+                        <i class="fas fa-tools"></i> Postman
+                    </div>
                 </li>
             </ul>        
         </section>
         <hr>
         <section class="projects">
-            <h2>Proyectos en los que he trabajado</h2>
+            <h2>Proyectos en los que he trabajado</h2><br>
             <strong>Proyecto destacado:</strong><br>
             <article>
                 <p>Desarrollado completamente por mí como freelance.</p>
@@ -176,45 +213,59 @@
         </section>
         <hr>
         <section class="education">
-            <h2>Educación</h2>         
-        <article>
-            <h3>Centro de Enseñanza Técnica Industrial (CETI)</h3>
-            <p><strong>Periodo:</strong> 2017 - 2021</p>
-            <p>Formación como tecnólogo a nivel preparatoria, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación</p>
-            <p>Principales herramientas que aprendí:</p>
-            <ul>
-                <li>Lenguajes: Ensamblador, C++, Java (Android Studio)</li>
-                <li>Bases de datos: MariaDB</li>
-                <li>Herramientas: XAMPP, Packet Tracer</li>
-            </ul>
-        </article>
-        <br>
-        <article>
-            <h3>Azul School</h3>
-            <p><strong>Periodo:</strong> 2023 - Actualidad</p>
-            <p>Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend</p>
-            <p>Cursos aprendidos:</p>
-            <ul>
-                <li>
-                    Git y Github
-                </li>
-                <li>
-                    Angular desde 0
-                </li>
-                <li>
-                    Curso profesional de JavaScript
-                </li>
-                <li>
-                    Curso profesional de Node JS
-                </li>
-                <li>
-                    Curso profesional de React 
-                </li>
-                <li>
-                    Curso profesional de Python
-                </li>
-            </ul>
-        </article>
+            <h2>Educación</h2><br>         
+<article>
+    <h3>Centro de Enseñanza Técnica Industrial (CETI)</h3>
+    <p><strong>Periodo:</strong> 2017 - 2021</p>
+    <p>Formación como tecnólogo a nivel preparatoria, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación</p>
+    <p>Principales herramientas que aprendí:</p>
+    <ul>
+        <li>
+            <h4>Lenguajes:</h4>
+            <span class="tool-icon-container"><i class="fa-solid fa-microchip"></i> Ensamblador</span>
+            <span class="tool-icon-container"><i class="fa-solid fa-code"></i> C++</span>
+            <span class="tool-icon-container"><i class="fab fa-java"></i> Java (Android Studio)</span>
+            <span class="tool-icon-container"><i class="fab fa-php"></i> PHP</span>
+        </li>
+        <li>
+            <h4>Bases de datos:</h4>    
+            <span class="tool-icon-container"><i class="fa fas fa-database"></i> MariaDB</span>
+        </li>
+        <li>
+            <h4>Herramientas:</h4>
+            <span class="tool-icon-container"><i class="fas fa-tools"></i> XAMPP</span>
+            <span class="tool-icon-container"><i class="fa-solid fa-house-signal"></i> Packet Tracer</span>
+        </li>
+    </ul>
+</article>
+<br>
+<article>
+    <h3>Azul School</h3>
+    <p><strong>Periodo:</strong> 2023 - Actualidad</p>
+    <p>Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend</p>
+    <p>Cursos aprendidos:</p>
+    <ul>
+        <li>
+            <span class="tool-icon-container"><i class="fa-brands fa-git-alt"></i> Git</span> y
+            <span class="tool-icon-container"><i class="fab fa-github"></i> Github</span>
+        </li>
+        <li>
+            <span class="tool-icon-container"><i class="fab fa-angular"></i> Angular</span> desde 0
+        </li>
+        <li>
+            Curso profesional de <span class="tool-icon-container"><i class="fab fa-js"></i> JavaScript</span>
+        </li>
+        <li>
+            Curso profesional de <span class="tool-icon-container"><i class="fab fa-node-js"></i> Node JS</span>
+        </li>
+        <li>
+            Curso profesional de <span class="tool-icon-container"><i class="fab fa-react"></i> React</span>
+        </li>
+        <li>
+            Curso profesional de <span class="tool-icon-container"><i class="fab fa-python"></i> Python</span>
+        </li>
+    </ul>
+</article>
         </section>
     </main>
     <footer class="footer">
