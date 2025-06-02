@@ -10,8 +10,6 @@ ul, ol {
     padding-left: 2em; 
 }
 
-
-
 header {
     position: sticky;
     top: 0;
@@ -31,6 +29,17 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+.profile-container{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.profile .img-profile{
+    width: 200px;
+    height: fit-content;
+    border-radius: 45px;
 }
 
 .open-to-work{
@@ -144,10 +153,6 @@ main {
     padding-right: 10px;
     border-radius: 500px;
     transition: all .3s ease;
-}
-
-.profile .img-profile{
-    width: 200px;
 }
 
 img.icon{
@@ -270,7 +275,9 @@ hr {
 a{
     font-weight: 400;
 }
-
+.footer-text{
+    text-align: center;
+}
 /* Responsividad para el header y tabs */
 @media (max-width: 850px) {
     .topics-buttons{

@@ -4,7 +4,8 @@
 
 // Lista el nombre e los temas
 const themes = ['light', 'dark', 'blue']
-let currentTheme = 'dark'
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+let currentTheme = prefersDark ? 'dark' : 'light'
 
 // Funcion para cambiar el tema de la pagina
 function setTheme(theme) {
@@ -36,7 +37,7 @@ document.querySelectorAll('.theme-selector .tab')[2].onclick = function() { setT
  * Idioma de la pagina
 ******************************************************/
 
-let lang = 'es'
+let lang = 'en'
 const texts = {
     es: {
         welcome: 'Bienvenido a mi portafolio profesional',
