@@ -6,6 +6,10 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 ul, ol {
     padding-left: 2em; 
 }
@@ -50,6 +54,11 @@ header {
 .profile-info{
     display: flex;
     flex-direction: column;
+    gap: 6px;
+}
+.profile-links{
+    display: flex;
+    flex-wrap: wrap; 
     gap: 6px;
 }
 
@@ -155,12 +164,6 @@ main {
     transition: all .3s ease;
 }
 
-.profile-links{
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 6px;
-}
-
 img.icon{
     width: 24px;
     cursor: pointer;
@@ -221,6 +224,12 @@ img.no-pointer{
 .img-text:hover .hint {
     opacity: 0.95;
     pointer-events: auto;
+}
+
+@media (min-width: 505px) and (max-width: 550px) {
+    .hidden-content{
+        inset-inline: auto -25px !important;
+    }
 }
 
 .cv-buttons-container{
