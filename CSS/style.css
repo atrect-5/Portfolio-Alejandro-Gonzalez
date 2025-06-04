@@ -86,6 +86,7 @@ header {
     font-size: 1em;
     margin-right: 5px;
     margin-top: 4px;
+    vertical-align: bottom;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
     transition: background 0.3s, color 0.3s;
 }
@@ -171,7 +172,7 @@ img.icon{
 img.no-pointer{
     cursor: default;
 }
-    .no-padding{
+.no-padding{
     padding: 0 !important;
 }
 
