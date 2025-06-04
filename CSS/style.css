@@ -266,6 +266,8 @@ button:active{
 .school-info{
     display: flex;
     justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 6px;
 }
 .school-logo{
     width: 5rem;
