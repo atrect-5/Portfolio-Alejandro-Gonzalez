@@ -80,13 +80,13 @@ header {
     gap: 5px;
     padding: 5px 15px;
     border-radius: 500px;
-    background-color: #f5f5f5; /* default for fallback */
-    color: #222;
+    background-color: currentColor;
+    color: currentColor;
     font-weight: 500;
     font-size: 1em;
     margin-right: 5px;
     margin-top: 4px;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
     transition: background 0.3s, color 0.3s;
 }
 i{
@@ -259,6 +259,51 @@ button:active{
     scale: .98;
 }
 
+.education > article{
+    display: flex;
+    flex-direction: column;
+}
+.school-info{
+    display: flex;
+    justify-content: space-between;
+}
+.school-logo{
+    width: 5rem;
+    height: fit-content;
+}
+.school-title-row {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 2px;  
+    flex-wrap: wrap; 
+}
+.period-label{
+    width: fit-content;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 5px;
+    border-radius: 500px;
+    font-weight: 500;
+    font-size: .9em;
+    transition: background 0.3s, color 0.3s;
+}
+
+.icon-see{
+    cursor: pointer;
+    font-size: .8rem ;
+}
+
+.course-actions {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 6px;
+}
+.course-actions a {
+    text-decoration: none !important;
+}
+
 footer{
     margin-top: 75px;
     background-color: gray;
@@ -364,6 +409,10 @@ body.light .tool-icon-container {
     background-color: #e8e8e8;
     color: #1976d2;
 }
+body.light .period-label{
+    background-color: #e8e8e8;
+    color: #1976d2;
+}
 body.light .tab {
     background-color: #dbdbdb;
     color: #222;
@@ -448,6 +497,10 @@ body.dark .open-to-work {
     color: #7fff9f;
 }
 body.dark .tool-icon-container {
+    background-color: #23243a;
+    color: #bfc7ff;
+}
+body.dark .period-label{
     background-color: #23243a;
     color: #bfc7ff;
 }
@@ -536,6 +589,10 @@ body.blue .open-to-work {
     color: #43e68b;
 }
 body.blue .tool-icon-container {
+    background-color: #1a335a;
+    color: #7ec3ff;
+}
+body.blue .period-label {
     background-color: #1a335a;
     color: #7ec3ff;
 }
