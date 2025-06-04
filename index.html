@@ -55,14 +55,6 @@
                         <div class="hint">Click en el icono para mandar correo.</div>
                     </div>
                     <div class="profile-links">
-                        <div class="img-text github_link">
-                            <!-- Abre mi perfil de github -->
-                            <a href="https://github.com/atrect-5" target="_blank">
-                                <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
-                            </a>
-                            atrect-5
-                            <div class="hint">Click en el icono para ir github.</div>
-                        </div>
                         <div class="CV_link img-text">
                             <div class="cv-buttons-container">
                                 <!-- Ver CV en nueva pestaña -->
@@ -75,7 +67,13 @@
                                 </a>
                             </div>
                             CV
-                            <div class="hint hidden-content">Click en el icono para ver/descargar CV.</div>
+                            <div class="hint">Click en el icono para ver/descargar CV.</div>
+                        </div>
+                        <div class="img-text github_link no-padding">
+                            <!-- Abre mi perfil de github -->
+                            <a href="https://github.com/atrect-5" target="_blank">
+                                <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
+                            </a>
                         </div>
                         <div class="linkedin_link img-text no-padding">
                             <!-- Abre mi perfil de linkedin -->
@@ -164,59 +162,54 @@
         <hr>
         <section class="projects">
             <h2>Proyectos en los que he trabajado</h2><br>
-            <strong>Proyecto destacado:</strong><br>
             <article>
-                <p>Desarrollado completamente por mí como freelance.</p>
+            <strong>Proyecto destacado:</strong><br>
                 <p>Software de control y monitoreo remoto para maquinas de refrigeracion industrial.</p>
                 <p>Desarrollado para: <strong>SOS Servicios o Soluciones Integrales</strong>, como complemento a las máquinas de refrigeración que fabrican.</p>
                 <p><strong>Tecnologías utilizadas:</strong></p>
                 <ul>
                     <li>
-                        <strong>Frontend:</strong> 
-                        Aplicación desarrollada con 
-                        <span class="tool-icon-container">
+                        <strong>Frontend:</strong> <br> 
+                        <span class="tool-icon-container in-project">
                             <i class="fab fa-react"></i> <em>Vite + React</em>
                         </span>
-                        y empaquetada como aplicación de escritorio usando 
-                        <span class="tool-icon-container">
+                        
+                        <span class="tool-icon-container in-project">
                             <img src="./assets/icon_electron_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_electron"> <em>Electron</em>
-                        </span>.
+                        </span>
                     </li>
                     <li>
-                        <strong>Backend:</strong> 
-                        Construido con 
-                        <span class="tool-icon-container">
+                        <strong>Backend:</strong> <br>
+                        <span class="tool-icon-container in-project">
                             <i class="fab fa-node-js"></i> <em>Node.js</em> + <em>Express.js</em>
-                        </span>, y desplegado en 
-                        <span class="tool-icon-container">
-                            <img src="./assets/icon_heroku_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_heroku"><em>Heroku</em>
-                        </span> para manejar la lógica y el procesamiento de datos.
+                        </span> 
+                        <span class="tool-icon-container in-project">
+                            <img src="./assets/icon_heroku_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_heroku"> <em>Heroku</em>
+                        </span> 
+                        <span class="tool-icon-container in-project">
+                            <img src="./assets/icon_mqtt_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_mqtt"> <em>MQTTS</em>
+                        </span> 
                     </li>
                     <li>
-                        <strong>Bases de datos:</strong> 
-                        Uso de 
-                        <span class="tool-icon-container">
+                        <strong>Bases de datos:</strong><br>
+                        <span class="tool-icon-container in-project">
                             <img src="./assets/icon_mongo_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_mongo"> <em>MongoDB</em>
-                        </span> para datos estructurados e 
-                        <span class="tool-icon-container">
+                        </span>
+                        <span class="tool-icon-container in-project">
                             <img src="./assets/icon_influxdb_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_influxdb"> <em>InfluxDB</em>
-                        </span> para lecturas en tiempo real de las máquinas.
-                    </li>
-                    <li>
-                        <strong>Comunicaci&oacute;n: </strong>
-                        Comunicación segura mediante <em>HTTPS</em> con el backend y <em>MQTTS</em> para la conexión en tiempo real con las máquinas.
+                        </span>
                     </li>
                 </ul>
             </article>
             <br>
-            <strong>Proyecto práctico de cursos:</strong>
             <article>
-                <p>Es una aplicación web que simula una cartelera de cine, donde se pueden <strong>agregar, consultar, editar y eliminar películas</strong>, incluyendo detalles como nombre, descripción, horarios, etc.</p>
+            <strong>Proyecto práctico de cursos:</strong>
+                <p>Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.</p>
                 <p>Desarrollado como parte de mis cursos de 
-                    <span class="tool-icon-container">
+                    <span class="tool-icon-container in-project">
                         <i class="fab fa-node-js"></i> Node.js
                     </span> y 
-                    <span class="tool-icon-container">
+                    <span class="tool-icon-container in-project">
                         <i class="fab fa-react"></i> React
                     </span>.
                 </p>
@@ -225,28 +218,25 @@
                 <p><strong>Tecnologías utilizadas:</strong></p>
                 <ul>
                     <li>
-                        <strong>Frontend:</strong> 
-                        Desarrollado con 
-                        <span class="tool-icon-container">
+                        <strong>Frontend:</strong> <br>
+                        <span class="tool-icon-container in-project">
                             <i class="fab fa-react"></i> <em>Create React App</em>
-                        </span> para construir una interfaz interactiva y dinámica.
+                        </span>
                     </li>
                     <li>
-                        <strong>Backend:</strong> 
-                        Implementado con 
-                        <span class="tool-icon-container">
+                        <strong>Backend:</strong> <br>
+                        <span class="tool-icon-container in-project">
                             <i class="fab fa-node-js"></i> <em>Node.js</em> + <em>Express.js</em>
-                        </span> y desplegado en 
-                        <span class="tool-icon-container">
+                        </span>
+                        <span class="tool-icon-container in-project">
                             <img src="./assets/icon_heroku_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_heroku"> <em>Heroku</em>
-                        </span> para manejar las rutas y la lógica del servidor.
+                        </span>
                     </li>
                     <li>
-                        <strong>Bases de datos:</strong> 
-                        Uso de 
-                        <span class="tool-icon-container">
+                        <strong>Bases de datos:</strong> <br>
+                        <span class="tool-icon-container in-project">
                             <img src="./assets/icon_mongo_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_mongo"> <em>MongoDB</em>
-                        </span> para almacenar los datos de las peliculas.
+                        </span>
                     </li>
                 </ul>
             </article>
@@ -308,8 +298,8 @@
                     <p><strong>Cursos aprendidos:</strong></p>
                     <ul>
                         <li>
-                            <span class="tool-icon-container"><i class="fa-brands fa-git-alt"></i> Git</span> y
-                            <span class="tool-icon-container"><i class="fab fa-github"></i> Github</span>.
+                            <span class="tool-icon-container no-margin-right"><i class="fa-brands fa-git-alt"></i> Git</span> y
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-github"></i> Github</span>.
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Git-y-GitHub-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -320,7 +310,7 @@
                             </div>
                         </li>
                         <li>
-                            <span class="tool-icon-container"><i class="fab fa-angular"></i> Angular</span> desde 0.
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-angular"></i> Angular</span> desde 0.
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-de-Angular-desde-cero-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -331,7 +321,7 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container"><i class="fab fa-js"></i> JavaScript</span>.
+                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-js"></i> JavaScript</span>.
                             <div class="course-actions">
                                 <a href="./pdf/Curso-profesional-de-JavaScript-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -342,7 +332,7 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container"><i class="fab fa-node-js"></i> Node JS</span>.
+                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-node-js"></i> Node JS</span>.
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-NodeJS-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -353,7 +343,7 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container"><i class="fab fa-react"></i> React</span>.
+                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-react"></i> React</span>.
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-React-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -364,7 +354,7 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container"><i class="fab fa-python"></i> Python</span>.
+                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-python"></i> Python</span>.
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-Python-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -399,7 +389,7 @@
                     <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
                 </a>
                 https://github.com/atrect-5
-                <div class="hint">Haz clic en el icono para ir al sitio.</div>
+                <div class="hint">Haz clic en el icono para ir a github.</div>
             </div>
             <div class="linkedin_link img-text">
                 <!-- Abre mi perfil de linkedin -->
@@ -407,7 +397,7 @@
                     <img src="./assets/icon_linkedin_dark.png" alt="linkedin_icon" class="icon" data-icon="icon_linkedin">
                 </a>
                 https://www.linkedin.com/in/atrect5-alejandro-gonzalez
-                <div class="hint">Haz clic en el icono para ir al sitio.</div>
+                <div class="hint">Haz clic en el icono para ir a linkedin.</div>
             </div>
         </div>
         <br>

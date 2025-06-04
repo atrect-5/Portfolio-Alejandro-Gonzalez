@@ -90,9 +90,23 @@ header {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
     transition: background 0.3s, color 0.3s;
 }
-i{
-    font-size: 1.5em;
+.no-margin-right{
+    margin-right: 0 !important;
 }
+i{
+    font-size: 1.5rem;
+}
+.tool-icon-container.in-project{
+    padding: 2px 10px;
+    font-size: .8rem;
+}
+.tool-icon-container.in-project i{
+    font-size: .8rem;
+}
+.tool-icon-container.in-project img{
+    width: .8rem;
+}
+
 
 /* Selector de lenguaje */
 .language-tabs, .theme-selector {
@@ -225,12 +239,6 @@ img.no-pointer{
 .img-text:hover .hint {
     opacity: 0.95;
     pointer-events: auto;
-}
-
-@media (min-width: 505px) and (max-width: 550px) {
-    .hidden-content{
-        inset-inline: auto -25px !important;
-    }
 }
 
 .cv-buttons-container{
