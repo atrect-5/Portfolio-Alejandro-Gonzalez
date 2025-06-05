@@ -41,7 +41,63 @@ let lang = 'en'
 import en from '../lang/en.js'
 import es from '../lang/es.js'
 
+// Para prevenir insercion de HTML no deseado, se usa una función de sanitización que solo permite etiquetas <strong>
+// y se traduce directamente los textos de etiquetas <i></i>
+const i18n = {
+}
+
 const translations = { en, es }
+
+// Sanitiza el HTML permitiendo solo <strong>, <i> y <span class="...">
+function sanitizeHTML(str) {
+    // Escapa cualquier etiqueta no permitida
+    let safe = str
+        .replace(/<(?!\/?(strong|i|span)(\s|>|\/))/gi, "&lt;")
+        // Permite solo el atributo class en <span>
+        .replace(/<span(?!\s|>)/gi, "&lt;span")
+        .replace(/<span([^>]*)>/gi, (match, attrs) => {
+            const classAttr = attrs.match(/\sclass\s*=\s*["'][^"']*["']/i)
+            return `<span${classAttr ? classAttr[0] : ""}>`
+        })
+    return safe
+}
+
+// Traduce todos los elementos con data-section y data-value
+function translatePage() {
+    const data = translations[lang]
+    document.querySelectorAll('[data-section][data-value]').forEach(el => {
+        const section = el.getAttribute('data-section')
+        let value = el.getAttribute('data-value')
+        // Si data-value es vacío, usa la sección como clave directa
+        if (!value) value = section
+
+        let translation
+        // Soporta claves anidadas con punto y arrays
+        if (value.includes('.')) {
+            const parts = value.split('.')
+            let ref = data?.[section]
+            for (const part of parts) {
+                if (Array.isArray(ref) && !isNaN(part)) {
+                    ref = ref[parseInt(part, 10)]
+                } else if (ref && typeof ref === 'object') {
+                    ref = ref[part]
+                } else {
+                    ref = undefined
+                    break
+                }
+            }
+            translation = ref
+        } else {
+            translation = data?.[section]?.[value]
+        }
+
+        if (!translation && data?.[section]) translation = data[section][value]
+        if (!translation && data[value]) translation = data[value]
+        if (typeof translation === "string") {
+            el.innerHTML = sanitizeHTML(translation)
+        }
+    })
+}
 
 // Funcion para cambiar el lenguaje de la pagina
 function setLanguage(selectedLang) {
@@ -51,11 +107,8 @@ function setLanguage(selectedLang) {
     langTabs.forEach(tab => tab.classList.remove('active'))
     if(lang === 'es') langTabs[0].classList.add('active')
     if(lang === 'en') langTabs[1].classList.add('active')
-    // Cambia los textos de acurdo al idioma seleccionado
-    const data = translations[lang]
-    console.log(data)
-    
-    
+    // Traduce la página
+    translatePage()
     // Actualiza los títulos de las imágenes de proyectos
     updateProjectImageTitles()
 }

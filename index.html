@@ -13,17 +13,17 @@
     <header class="header">
         <div class="header-info">
             <div class="topics-buttons">
-                <button class="tab tab-left" data-target="profile">Perfil</button>
-                <button class="tab tab-mid" data-target="about-me">Sobre mí</button>
-                <button class="tab tab-mid" data-target="skills">Habillidades</button>
-                <button class="tab tab-mid" data-target="projects">Proyectos</button>
-                <button class="tab tab-right" data-target="education">Educaci&oacute;n</button>
+                <button class="tab tab-left" data-target="profile" data-section="header" data-value="header-nav.0">Perfil</button>
+                <button class="tab tab-mid" data-target="about-me" data-section="header" data-value="header-nav.1">Sobre mí</button>
+                <button class="tab tab-mid" data-target="skills" data-section="header" data-value="header-nav.2">Habillidades</button>
+                <button class="tab tab-mid" data-target="projects" data-section="header" data-value="header-nav.3">Proyectos</button>
+                <button class="tab tab-right" data-target="education" data-section="header" data-value="header-nav.4">Educaci&oacute;n</button>
             </div>
             <div class="control-buttons">
                 <div class="theme-selector">
-                    <button class="tab tab-left active">Claro</button>
-                    <button class="tab tab-mid">Oscuro</button>
-                    <button class="tab tab-right">Azul</button>
+                    <button class="tab tab-left active" data-section="header" data-value="themeNames.0">Claro</button>
+                    <button class="tab tab-mid" data-section="header" data-value="themeNames.1">Oscuro</button>
+                    <button class="tab tab-right" data-section="header" data-value="themeNames.2">Azul</button>
                 </div>
                 <div class="language-tabs">
                     <button class="tab tab-left active">Es</button>
@@ -33,26 +33,26 @@
         </div>
     </header>
     <main>
-        <h1 id="welcome">Bienvenido a mi portafolio profesional</h1>
+        <h1 id="welcome" data-section="title" data-value="">Bienvenido a mi portafolio profesional</h1>
         <hr>
         <section class="profile">
             <div class="profile-container">
                 <img src="./assets/profile_img.jpg" alt="perfil" class="img-profile">
                 <div class="profile-info">
                     <h1 class="name">Alejandro Gonzalez</h1>
-                    <h2>Desarrollador de software Jr</h2>
+                    <h2 data-section="profile" data-value="description">Desarrollador de software Jr</h2>
                     <div class="location">
                         <img src="./assets/icon_location_dark.png" alt="location_icon" class="icon no-pointer" data-icon="icon_location">
                         Zapopan, Jalisco, México
                     </div>
-                    <p class="open-to-work">Disponible para trabajar</p>
+                    <p class="open-to-work" data-section="profile" data-value="open-to-work">Disponible para trabajar</p>
                     <div class="img-text contact">
                         <!-- Abre el cliente de correo -->
                         <a href="mailto:alex1123.nel@gmail.com" target="_blank">    
                             <img src="./assets/icon_email_dark.png" alt="email_icon" class="icon" data-icon="icon_email">
                         </a>
                         alex1123.nel@gmail.com
-                        <div class="hint">Click en el icono para mandar correo.</div>
+                        <div class="hint" data-section="hints" data-value="email">Click en el icono para mandar correo.</div>
                     </div>
                     <div class="profile-links">
                         <div class="CV_link img-text">
@@ -67,7 +67,7 @@
                                 </a>
                             </div>
                             CV
-                            <div class="hint">Click en el icono para ver/descargar CV.</div>
+                            <div class="hint" data-section="hints" data-value="cv">Click en el icono para ver/descargar CV.</div>
                         </div>
                         <div class="img-text github_link no-padding">
                             <!-- Abre mi perfil de github -->
@@ -86,20 +86,20 @@
             </div>
         </section>
         <section class="about-me">
-            <h2>Sobre mí</h2><br>
-            <p>
+            <h2 data-section="about-me" data-value="title">Sobre mí</h2><br>
+            <p data-section="about-me" data-value="description-1">
                 Soy desarrollador full stack junior, con interés en participar en todas las etapas del desarrollo, desde el frontend hasta el backend.
             </p>
-            <p>
+            <p data-section="about-me" data-value="description-2">
                 Estoy comenzando mi carrera y tengo muchas ganas de seguir aprendiendo, enfrentar nuevos retos y crecer profesionalmente. 
             </p>
-            <p>
+            <p data-section="about-me" data-value="description-3">
                 Mi objetivo es convertirme en un desarrollador sólido y versátil, capaz de enfrentar desafíos complejos y contribuir a soluciones innovadoras.
             </p>
         </section>
         <hr>
         <section class="skills">
-            <h2>Tecnológias</h2><br>
+            <h2 data-section="skills" data-value="title">Tecnológias</h2><br>
             <ul>
                 <li>
                         <span class="tool-icon-container">
@@ -149,13 +149,13 @@
         </section>
         <hr>
         <section class="projects">
-            <h2>Proyectos</h2><br>
+            <h2 data-section="projects" data-value="title">Proyectos</h2><br>
             <div class="project-container">
                 <div class="project-description">
                     <article>
-                        <strong>Proyecto:</strong><br>
-                        <p>Software de control y monitoreo remoto para maquinas de refrigeracion industrial.</p>
-                        <p>Desarrollado para: <strong>SOS Servicios o Soluciones Integrales</strong>, como complemento a las máquinas de refrigeración que fabrican.</p>
+                        <strong data-section="projects" data-value="project-1.title">Proyecto:</strong><br>
+                        <p data-section="projects" data-value="project-1.description-1">Software de control y monitoreo remoto para maquinas de refrigeracion industrial.</p>
+                        <p data-section="projects" data-value="project-1.description-2">Desarrollado para: <strong>SOS Servicios o Soluciones Integrales</strong>, como complemento a las máquinas de refrigeración que fabrican.</p>
                         <ul>
                             <li> 
                                 <span class="tool-icon-container in-project">
@@ -199,12 +199,13 @@
             <div class="project-container">
                 <div class="project-description">
                     <article>
-                        <strong>Práctica:</strong>
-                        <p>Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.</p>
-                        <p>Desarrollado como parte de mis cursos de 
+                        <strong data-section="projects" data-value="project-2.title">Práctica:</strong>
+                        <p data-section="projects" data-value="project-2.description-1">Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.</p>
+                        <p>
+                            <span data-section="projects" data-value="project-2.description-2">Desarrollado como parte de mis cursos de </span>
                             <span class="tool-icon-container in-project">
                                 <i class="fab fa-node-js"></i> Node.js
-                            </span> y 
+                            </span> &
                             <span class="tool-icon-container in-project">
                                 <i class="fab fa-react"></i> React
                             </span>.
@@ -250,7 +251,7 @@
         </section>
         <hr>
         <section class="education">
-            <h2>Educación</h2><br>         
+            <h2 data-section="education" data-value="title">Educación</h2><br>         
             <article>
                 <div class="school-info">
                     <div class="school-description">
@@ -258,15 +259,15 @@
                             <h3>Centro de Enseñanza Técnica Industrial</h3>
                             <p class="period-label">2017 - 2021</p>
                         </div>
-                        <p>Formación como tecnólogo en desarrollo de software, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación.</p>
+                        <p data-section="education" data-value="school-1.description">Formación como tecnólogo en desarrollo de software, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación.</p>
                     </div>
                     <img src="./assets/ceti_logo.png" alt="ceti_logo" class="school-logo">
                 </div>
                 <div class="school-learning">
-                    <p><strong>Principales herramientas que aprendí:</strong></p>
+                    <p><strong data-section="education" data-value="school-1.tools-learned">Principales herramientas que aprendí:</strong></p>
                     <ul>
                         <li>
-                            <h4>Lenguajes:</h4>
+                            <h4 data-section="education" data-value="school-1.languages-title">Lenguajes:</h4>
                             <span class="tool-icon-container"><i class="fa-solid fa-microchip"></i> Assembler</span>
                             <span class="tool-icon-container">
                                 <img src="./assets/icon_cpp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_cpp"> C++
@@ -275,11 +276,11 @@
                             <span class="tool-icon-container"><i class="fab fa-php"></i> PHP</span>
                         </li>
                         <li>
-                            <h4>Bases de datos:</h4>    
+                            <h4 data-section="education" data-value="school-1.database-title">Bases de datos:</h4>    
                             <span class="tool-icon-container"><i class="fa fas fa-database"></i> MariaDB</span>
                         </li>
                         <li>
-                            <h4>Herramientas:</h4>
+                            <h4 data-section="education" data-value="school-1.tools-title">Herramientas:</h4>
                             <span class="tool-icon-container">
                                 <img src="./assets/icon_xampp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_xampp"> XAMPP
                             </span>
@@ -294,18 +295,19 @@
                     <div class="school-description">
                         <div class="school-title-row">
                             <h3>Azul School</h3>
-                            <p class="period-label">2023 - Actualidad</p>
+                            <p class="period-label" data-section="education" data-value="school-2.time-lapse">2023 - Actualidad</p>
                         </div>
-                            <p>Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend.</p>
+                            <p data-section="education" data-value="school-2.description">Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend.</p>
                     </div>
                     <img src="./assets/azul_school_logo.png" alt="azul_school_logo" class="school-logo">
                 </div>
                 <div class="school-learning">
-                    <p><strong>Cursos aprendidos:</strong></p>
+                    <p><strong data-section="education" data-value="school-2.tools-learned">Cursos aprendidos:</strong></p>
                     <ul>
                         <li>
-                            <span class="tool-icon-container no-margin-right"><i class="fa-brands fa-git-alt"></i> Git</span> y
-                            <span class="tool-icon-container no-margin-right"><i class="fab fa-github"></i> Github</span>.
+                            <span class="tool-icon-container no-margin-right"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span data-section="education" data-value="school-2.course-list.course-1">y</span>
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-github"></i> Github</span>
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Git-y-GitHub-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -316,7 +318,8 @@
                             </div>
                         </li>
                         <li>
-                            <span class="tool-icon-container no-margin-right"><i class="fab fa-angular"></i> Angular</span> desde 0.
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-angular"></i> Angular</span>
+                            <span data-section="education" data-value="school-2.course-list.course-2">desde 0</span>
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-de-Angular-desde-cero-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -327,7 +330,8 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-js"></i> JavaScript</span>.
+                            <span data-section="education" data-value="school-2.course-list.course-3">Curso profesional de</span>
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-js"></i> JavaScript</span>
                             <div class="course-actions">
                                 <a href="./pdf/Curso-profesional-de-JavaScript-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -338,7 +342,8 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-node-js"></i> Node JS</span>.
+                            <span data-section="education" data-value="school-2.course-list.course-4">Curso profesional de</span>
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-node-js"></i> Node JS</span>
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-NodeJS-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -349,7 +354,8 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-react"></i> React</span>.
+                            <span data-section="education" data-value="school-2.course-list.course-5">Curso profesional de</span>
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-react"></i> React</span>
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-React-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -360,7 +366,8 @@
                             </div>
                         </li>
                         <li>
-                            Curso profesional de <span class="tool-icon-container no-margin-right"><i class="fab fa-python"></i> Python</span>.
+                            <span data-section="education" data-value="school-2.course-list.course-6">Curso profesional de</span>
+                            <span class="tool-icon-container no-margin-right"><i class="fab fa-python"></i> Python</span>
                             <div class="course-actions">
                                 <a href="./pdf/Certificado-Curso-profesional-de-Python-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-certificate icon-see"></i>
@@ -377,7 +384,9 @@
     </main>
     <footer class="footer">
         <br>
-        <p class="footer-text">Este portafolio fue hecho con JavaScript, HTML, CSS y publicado en Vercel.</p>
+        <p class="footer-text" data-section="footer" data-value="description">Este portafolio fue hecho con JavaScript, HTML, CSS y publicado en Vercel.</p>
+        <br>
+        <strong>Alejandro Gonzalez</strong>
         <br>
         <strong>Links:</strong>
         <div class="footer-links">
@@ -387,7 +396,7 @@
                     <img src="./assets/icon_email_dark.png" alt="email_icon" class="icon" data-icon="icon_email">
                 </a>
                 alex1123.nel@gmail.com
-                <div class="hint">Haz clic en el icono para mandar correo.</div>
+                <div class="hint" data-section="hints" data-value="email">Haz clic en el icono para mandar correo.</div>
             </div>
             <div class="img-text github_link">
                 <!-- Abre mi perfil de github -->
@@ -395,7 +404,7 @@
                     <img src="./assets/icon_github_dark.png" alt="github_icon" class="icon" data-icon="icon_github">
                 </a>
                 https://github.com/atrect-5
-                <div class="hint">Haz clic en el icono para ir a github.</div>
+                <div class="hint" data-section="hints" data-value="github">Haz clic en el icono para ir a github.</div>
             </div>
             <div class="linkedin_link img-text">
                 <!-- Abre mi perfil de linkedin -->
@@ -403,11 +412,9 @@
                     <img src="./assets/icon_linkedin_dark.png" alt="linkedin_icon" class="icon" data-icon="icon_linkedin">
                 </a>
                 https://www.linkedin.com/in/atrect5-alejandro-gonzalez
-                <div class="hint">Haz clic en el icono para ir a linkedin.</div>
+                <div class="hint" data-section="hints" data-value="linkedin">Haz clic en el icono para ir a linkedin.</div>
             </div>
         </div>
-        <br>
-        <strong>Alejandro Gonzalez</strong>
     </footer>
 </body>
 </html>

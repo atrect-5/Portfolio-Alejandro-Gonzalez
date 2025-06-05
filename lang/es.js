@@ -27,7 +27,7 @@ export default {
         "project-2": {
             "title": "Práctica:",
             "description-1": "Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.",
-            "description-2": "Desarrollado como parte de mis cursos de Node.js y React"
+            "description-2": `Desarrollado como parte de mis cursos de`
         }
     },
     "education": {
@@ -42,7 +42,24 @@ export default {
         "school-2": {
             "time-lapse": "2023 - Actualidad", 
             "description": "Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend.",
-            "tools-learned": "Cursos aprendidos:"
+            "tools-learned": "Cursos aprendidos:",
+            "course-list": {
+                "course-1": "y",
+                "course-2": "desde 0",
+                "course-3": "Curso profesional de",
+                "course-4": "Curso profesional de",
+                "course-5": "Curso profesional de",
+                "course-6": "Curso profesional de"
+            }
         }
+    },
+    "footer": {
+        "description": "Este portafolio fue hecho con JavaScript, HTML, CSS y publicado en Vercel.",
+    },
+    "hints": {
+        "email": "Haz clic en el icono para mandar correo.",
+        "cv": "Click en el icono para ver/descargar CV.",
+        "github": "Haz clic en el icono para ir a github.",
+        "linkedin": "Haz clic en el icono para ir a linkedin."
     }
 }

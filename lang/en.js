@@ -26,8 +26,8 @@ export default {
         },
         "project-2": {
             "title": "Practice:",
-            "description-1": "Web application that simulates a movie billboard, where you can add, view, edit, and delete movies, including details such as name, description, showtimes, etc.",
-            "description-2": "Developed as part of my Node.js and React courses."
+            "description-1": "Web application that simulates a movie billboard, where you can add, view, edit, and delete movies, including details such as name, description, schedules, etc.",
+            "description-2": `Developed as part of my courses in`
         }
     },
     "education": {
@@ -42,7 +42,24 @@ export default {
         "school-2": {
             "time-lapse": "2023 - Now", 
             "description": "Online school focused on practical training and certifications. I have complemented my studies with specialized courses in web and backend development.",
-            "tools-learned": "Completed courses:"
+            "tools-learned": "Completed courses:",
+            "course-list": {
+                "course-1": "and",
+                "course-2": "from scratch",
+                "course-3": "Professional course in",
+                "course-4": "Professional course in",
+                "course-5": "Professional course in",
+                "course-6": "Professional course in"
+            }
         }
+    },
+    "footer": {
+        "description": "This portfolio was made with JavaScript, HTML, CSS, and published on Vercel.",
+    },
+    "hints": {
+        "email": "Click the icon to send an email.",
+        "cv": "Click the icon to view/download CV.",
+        "github": "Click the icon to go to github.",
+        "linkedin": "Click the icon to go to linkedin."
     }
 }
