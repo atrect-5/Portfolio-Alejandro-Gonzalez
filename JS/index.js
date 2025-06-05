@@ -68,6 +68,8 @@ function setLanguage(selectedLang) {
     texts[lang].themeNames.forEach((name, i) => {
         themeTabs[i].textContent = name
     })
+    // Actualiza los títulos de las imágenes de proyectos
+    updateProjectImageTitles()
 }
 
 // Se asigna la funcion para cambiar el lenguaje a los botones
@@ -140,5 +142,37 @@ window.addEventListener('scroll', activateTabOnScroll)
 
 // Llama una vez al cargar para el estado inicial
 activateTabOnScroll()
+
+/******************************************************
+ * Mostrar/ocultar imágenes extra en proyectos
+******************************************************/
+function getProjectImgTitle(isOpen) {
+    if (lang === 'es') {
+        return isOpen ? 'Ocultar imágenes' : 'Mostrar más imágenes'
+    } else {
+        return isOpen ? 'Hide images' : 'Show more images'
+    }
+}
+
+function updateProjectImageTitles() {
+    document.querySelectorAll('.projects-img-container [data-toggle-images]').forEach(img => {
+        const extra = img.parentElement.querySelector('.project-images-extra')
+        const isVisible = extra && extra.classList.contains('show')
+        img.title = getProjectImgTitle(isVisible)
+    })
+}
+
+document.querySelectorAll('.projects-img-container [data-toggle-images]').forEach(img => {
+    img.style.cursor = 'pointer'
+    img.title = getProjectImgTitle(false)
+    img.addEventListener('click', function() {
+        const extra = img.parentElement.querySelector('.project-images-extra')
+        if (extra) {
+            const isVisible = extra.classList.contains('show')
+            extra.classList.toggle('show')
+            img.title = getProjectImgTitle(!isVisible)
+        }
+    })
+})
 
 

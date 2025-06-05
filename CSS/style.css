@@ -126,7 +126,7 @@ i{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 0px;
     padding: 10px;
     border-radius: 25px;
     scroll-behavior: smooth;
@@ -140,6 +140,20 @@ i{
     height: auto;
     border-radius: 15px;
     transition: all .3s ease;
+}
+.project-images-extra {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s, margin-top 0.3s;
+    will-change: max-height, opacity, margin-top;
+}
+
+.project-images-extra.show {
+    margin-top: 5px;
+    max-height: 1000px;
+    opacity: 1;
 }
 
 /* Selector de lenguaje */
