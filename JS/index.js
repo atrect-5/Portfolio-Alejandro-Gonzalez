@@ -37,7 +37,17 @@ document.querySelectorAll('.theme-selector .tab')[2].onclick = function() { setT
  * Idioma de la pagina
 ******************************************************/
 
-let lang = 'en'
+// Detecta el idioma preferido del usuario
+function getPreferredLang() {
+    const navLang = navigator.language || navigator.userLanguage || 'en'
+    if (navLang.startsWith('es')) return 'es'
+    if (navLang.startsWith('en')) return 'en'
+
+    return 'en'
+}
+
+let lang = getPreferredLang()
+
 import en from '../lang/en.js'
 import es from '../lang/es.js'
 
