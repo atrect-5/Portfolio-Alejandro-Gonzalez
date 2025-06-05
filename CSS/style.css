@@ -385,6 +385,9 @@ hr {
     opacity: 1;
     transition: background 0.3s;
 }
+.little-separation{
+    width: 5px;
+}
 a{
     font-weight: 400;
 }
