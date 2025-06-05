@@ -1,8 +1,9 @@
-{
+export default {
     "header": {
         "header-nav": ["Profile", "About Me", "Skills", "Projects", "Education"],
         "themeNames": ["Light", "Dark", "Blue"]
     },
+    "title": "Welcome to my professional portfolio",
     "profile": {
         "description": "Junior Software Developer",
         "open-to-work": "Open to work"
@@ -21,7 +22,7 @@
         "project-1": {
             "title": "Project:",
             "description-1": "Remote control and monitoring software for industrial refrigeration machines.",
-            "description-2": "Developed for: SOS Servicios o Soluciones Integrales, as a complement to the refrigeration machines they manufacture."
+            "description-2": "Developed for: <strong>SOS Servicios o Soluciones Integrales</strong>, as a complement to the refrigeration machines they manufacture."
         },
         "project-2": {
             "title": "Practice:",

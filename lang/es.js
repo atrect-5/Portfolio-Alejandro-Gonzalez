@@ -1,8 +1,9 @@
-{
+export default {
     "header": {
         "header-nav": ["Perfil", "Sobre mí", "Habilidades", "Proyectos", "Educación"],
         "themeNames": ["Claro", "Oscuro", "Azul"]
     },
+    "title": "Bienvenido a mi portafolio profesional",
     "profile": {
         "description": "Desarrollador de software Jr",
         "open-to-work": "Disponible para trabajar"
@@ -21,7 +22,7 @@
         "project-1": {
             "title": "Proyecto:",
             "description-1": "Software de control y monitoreo remoto para maquinas de refrigeracion industrial.",
-            "description-2": "Desarrollado para: SOS Servicios o Soluciones Integrales, como complemento a las maquinas de refrigeracion que fabrican."
+            "description-2": "Desarrollado para: <strong>SOS Servicios o Soluciones Integrales</strong>, como complemento a las maquinas de refrigeracion que fabrican."
         },
         "project-2": {
             "title": "Práctica:",

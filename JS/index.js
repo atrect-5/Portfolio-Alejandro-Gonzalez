@@ -38,20 +38,10 @@ document.querySelectorAll('.theme-selector .tab')[2].onclick = function() { setT
 ******************************************************/
 
 let lang = 'en'
-const texts = {
-    es: {
-        welcome: 'Bienvenido a mi portafolio profesional',
-        langBtn: 'En',
-        themeBtn: 'Cambiar tema',
-        themeNames: ['Claro', 'Oscuro', 'Azul']
-    },
-    en: {
-        welcome: 'Welcome to my professional portfolio',
-        langBtn: 'Es',
-        themeBtn: 'Change theme',
-        themeNames: ['Light', 'Dark', 'Blue']
-    }
-}
+import en from '../lang/en.js'
+import es from '../lang/es.js'
+
+const translations = { en, es }
 
 // Funcion para cambiar el lenguaje de la pagina
 function setLanguage(selectedLang) {
@@ -62,12 +52,10 @@ function setLanguage(selectedLang) {
     if(lang === 'es') langTabs[0].classList.add('active')
     if(lang === 'en') langTabs[1].classList.add('active')
     // Cambia los textos de acurdo al idioma seleccionado
-    document.getElementById('welcome').textContent = texts[lang].welcome
-    // Cambia los textos de los botones de tema
-    const themeTabs = document.querySelectorAll('.theme-selector .tab')
-    texts[lang].themeNames.forEach((name, i) => {
-        themeTabs[i].textContent = name
-    })
+    const data = translations[lang]
+    console.log(data)
+    
+    
     // Actualiza los títulos de las imágenes de proyectos
     updateProjectImageTitles()
 }
