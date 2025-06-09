@@ -5,7 +5,7 @@ export default {
     },
     "title": "Welcome to my professional portfolio",
     "profile": {
-        "description": "Junior Software Developer",
+        "description": "Junior Full Stack Developer",
         "open-to-work": "Open to work"
     },
     "about-me": {
@@ -33,13 +33,6 @@ export default {
     "education": {
         "title": "Education",
         "school-1": {
-            "description": "Training as a software development technologist, where I acquired the fundamentals of programming, electronics, and networking. Here, I developed my programming logic.",
-            "tools-learned": "Key tools I learned:",
-            "languages-title": "Languages", 
-            "database-title": "Databases",
-            "tools-title": "Tools"
-        },
-        "school-2": {
             "time-lapse": "2023 - Now", 
             "description": "Online school focused on practical training and certifications. I have complemented my studies with specialized courses in web and backend development.",
             "tools-learned": "Completed courses:",
@@ -51,6 +44,13 @@ export default {
                 "course-5": "Professional course in",
                 "course-6": "Professional course in"
             }
+        },
+        "school-2": {
+            "description": "Training as a software development technologist, where I acquired the fundamentals of programming, electronics, and networking. Here, I developed my programming logic.",
+            "tools-learned": "Key tools I learned:",
+            "languages-title": "Languages", 
+            "database-title": "Databases",
+            "tools-title": "Tools"
         }
     },
     "footer": {

@@ -5,7 +5,7 @@ export default {
     },
     "title": "Bienvenido a mi portafolio profesional",
     "profile": {
-        "description": "Desarrollador de software Jr",
+        "description": "Desarrollador Full Stack Junior",
         "open-to-work": "Disponible para trabajar"
     },
     "about-me": {
@@ -33,13 +33,6 @@ export default {
     "education": {
         "title": "Educación",
         "school-1": {
-            "description": "Formación como tecnólogo en desarrollo de software, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación.",
-            "tools-learned": "Principales herramientas que aprendí:",
-            "languages-title": "Lenguajes", 
-            "database-title": "Bases de datos",
-            "tools-title": "Herramientas"
-        },
-        "school-2": {
             "time-lapse": "2023 - Actualidad", 
             "description": "Escuela en línea enfocada en formación práctica y certificaciones. He complementado mis estudios con cursos especializados en desarrollo web y backend.",
             "tools-learned": "Cursos aprendidos:",
@@ -51,6 +44,13 @@ export default {
                 "course-5": "Curso profesional de",
                 "course-6": "Curso profesional de"
             }
+        },
+        "school-2": {
+            "description": "Formación como tecnólogo en desarrollo de software, donde adquirí las bases de la programación, electrónica y redes. Aquí desarrollé mi lógica de programación.",
+            "tools-learned": "Principales herramientas que aprendí:",
+            "languages-title": "Lenguajes", 
+            "database-title": "Bases de datos",
+            "tools-title": "Herramientas"
         }
     },
     "footer": {
