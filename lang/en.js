@@ -21,7 +21,7 @@ export default {
         "title": "Projects",
         "project-1": {
             "title": "Project:",
-            "description-1": "Remote control and monitoring software for industrial refrigeration machines.",
+            "description-1": "Independently developed a desktop application for remote monitoring and control of industrial refrigeration systems, from architecture to implementation.",
             "description-2": "Developed for: <strong>SOS Servicios o Soluciones Integrales</strong>, as a complement to the refrigeration machines they manufacture."
         },
         "project-2": {
