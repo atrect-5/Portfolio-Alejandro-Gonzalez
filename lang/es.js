@@ -28,6 +28,11 @@ export default {
             "title": "Práctica:",
             "description-1": "Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.",
             "description-2": `Desarrollado como parte de mis cursos de`
+        },
+        "project-3": {
+            "title": "Práctica:",
+            "description-1": "Web API para el control de gastos personales, permite a los usuarios registrarse, autenticarse (usando JWT) y gestionar sus cuentas de dinero (efectivo, débito, crédito), categorías de gastos/ingresos, transacciones y transferencias entre cuentas.",
+            "description-2": `Desarrollado como parte de mi curso de`
         }
     },
     "education": {
@@ -42,7 +47,10 @@ export default {
                 "course-3": "Curso profesional de",
                 "course-4": "Curso profesional de",
                 "course-5": "Curso profesional de",
-                "course-6": "Curso profesional de"
+                "course-6": "Curso profesional de",
+                "course-7": "Introducción a",
+                "course-8": "Programación Orientada a Objetos en",
+                "course-9": "Web API con"
             }
         },
         "school-2": {

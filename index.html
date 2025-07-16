@@ -19,6 +19,7 @@
     <title>Alejandro Gonzalez</title>
     <link rel="icon" type="image/jpeg" href="./assets/a.jpg">
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="module" src="./JS/index.js" defer></script>
 </head>
@@ -115,25 +116,31 @@
             <h2 data-section="skills" data-value="title">Tecnológias</h2><br>
             <ul>
                 <li>
-                        <span class="tool-icon-container">
-                            <i class="fab fa-html5"></i> HTML
-                        </span>
-                        <span class="tool-icon-container">
-                            <i class="fab fa-css3-alt"></i> CSS
-                        </span>
-                        <span class="tool-icon-container">
-                            <i class="fab fa-js"></i> JavaScript
-                        </span>
-                        <span class="tool-icon-container">
-                            <i class="fab fa-react"></i> React
-                        </span>
-                        <span class="tool-icon-container">
-                            <i class="fab fa-angular"></i> Angular
-                        </span>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-html5"></i> HTML
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-css3-alt"></i> CSS
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-js"></i> JavaScript
+                    </span>
+                    <span class="tool-icon-container">
+                        <img src="./assets/icon_csharp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_csharp"> C#
+                    </span>
                 </li>
                 <li>
                     <span class="tool-icon-container">
                         <i class="fab fa-node-js"></i> Node.js
+                    </span>
+                    <span class="tool-icon-container">
+                        <img src="./assets/icon_netcore_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_netcore"> .NET Core
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-react"></i> React
+                    </span>
+                    <span class="tool-icon-container">
+                        <i class="fab fa-angular"></i> Angular
                     </span>
                 </li>
                 <li>
@@ -144,7 +151,7 @@
                         <img src="./assets/icon_influxdb_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_influxdb"> InfluxDB
                     </span>
                     <span class="tool-icon-container">
-                        <i class="fa fas fa-database"></i> MariaDB
+                        <i class="fa fas fa-database"></i> PostgresSQL
                     </span>
                 </li>
                 <li>
@@ -266,6 +273,57 @@
                     </div>
                 </div>
             </div>
+            <hr class="little-separation">
+            <div class="project-container"> <!--Este proyecto es para el API WEB con .NetCore-->
+                <div class="project-description">
+                    <article>
+                        <strong data-section="projects" data-value="project-3.title">Práctica:</strong>
+                        <p data-section="projects" data-value="project-3.description-1">Aplicación web que simula una cartelera de cine, donde se pueden agregar, consultar, editar y eliminar películas, incluyendo detalles como nombre, descripción, horarios, etc.</p>
+                        <p>
+                            <span data-section="projects" data-value="project-3.description-2">Desarrollado como parte de mi curso de </span>
+                            <span class="tool-icon-container in-project">
+                                <img src="./assets/icon_netcore_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_netcore"> ASP.NET Core
+                            </span>.
+                            <span class="course-actions">
+                                <a href="https://web-api-net-core-azul-school-541ffd70e972.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square icon-see"></i>
+                                </a> |
+                                <a href="https://github.com/atrect-5/Course-WEB-API-.NET-CORE" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github icon-see"></i>
+                                </a>
+                            </span>
+                        </p>
+                        <ul>
+                            <li>
+                                <span class="tool-icon-container in-project">
+                                    <img src="./assets/icon_netcore_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_netcore"> <em>ASP.NET Core</em>
+                                </span>
+                                <span class="tool-icon-container in-project">
+                                    <img src="./assets/icon_csharp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_csharp"> <em>C#</em>
+                                </span>
+                                <span class="tool-icon-container in-project">
+                                    <img src="./assets/icon_heroku_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_heroku"> <em>Heroku</em>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="tool-icon-container in-project">
+                                    <i class="fa fas fa-database"></i> <em>PostgresSQL</em>
+                                </span>
+                                <span class="tool-icon-container in-project">
+                                    <i class="fa fas fa-cloud"></i> <em>SupaBase</em>
+                                </span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="projects-img-container">
+                    <img src="./assets/proyecto_dotnetcore_1.png" alt="list" class="project-img" data-toggle-images>
+                    <div class="project-images-extra">
+                        <img src="./assets/proyecto_dotnetcore_2.png" alt="list" class="project-img">
+                        <img src="./assets/proyecto_dotnetcore_3.png" alt="form" class="project-img">
+                    </div>
+                </div>
+            </div>
         </section>
         <hr>
         <section class="education">
@@ -353,6 +411,42 @@
                                     <i class="fa-solid fa-certificate icon-see"></i>
                                 </a>
                                 <a href="https://github.com/atrect-5/Curso-profesional-de-Python" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github icon-see"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span data-section="education" data-value="school-1.course-list.course-7">Introduncción a</span>
+                            <span class="tool-icon-container no-margin-right"><img src="./assets/icon_csharp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_csharp"> C#</span>
+                            <div class="course-actions">
+                                <a href="./pdf/Certificado-Introduccion-a-CS-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-certificate icon-see"></i>
+                                </a>
+                                <a href="https://github.com/atrect-5/CSharp-from-scratch" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github icon-see"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span data-section="education" data-value="school-1.course-list.course-8">Programación Orientada a Objetos en</span>
+                            <span class="tool-icon-container no-margin-right"><img src="./assets/icon_csharp_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_csharp"> C#</span>
+                            <div class="course-actions">
+                                <a href="./pdf/Certificado-Programacion-Orientada-a-Objetos-con-CS-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-certificate icon-see"></i>
+                                </a>
+                                <a href="https://github.com/atrect-5/OOP-in-CSharp" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github icon-see"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span data-section="education" data-value="school-1.course-list.course-9">Web API con</span>
+                            <span class="tool-icon-container no-margin-right"><img src="./assets/icon_netcore_dark.png" alt="tool_icon" class="icon no-pointer" data-icon="icon_netcore"> ASP.NET Core</span>
+                            <div class="course-actions">
+                                <a href="./pdf/Certificado-Introduccion-a-CS-Azul-School.pdf" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-certificate icon-see"></i>
+                                </a>
+                                <a href="https://github.com/atrect-5/Course-WEB-API-.NET-CORE" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-github icon-see"></i>
                                 </a>
                             </div>

@@ -28,6 +28,11 @@ export default {
             "title": "Practice:",
             "description-1": "Web application that simulates a movie billboard, where you can add, view, edit, and delete movies, including details such as name, description, schedules, etc.",
             "description-2": `Developed as part of my courses in`
+        },
+        "project-3": {
+            "title": "Practice:",
+            "description-1": "A personal expense tracking Web API that enables users to register, authenticate (using JWT), and manage their money accounts (cash, debit, credit), expenditure/income categories, transactions, and transfers between accounts.",
+            "description-2": `Developed as part of my course in`
         }
     },
     "education": {
@@ -42,7 +47,10 @@ export default {
                 "course-3": "Professional course in",
                 "course-4": "Professional course in",
                 "course-5": "Professional course in",
-                "course-6": "Professional course in"
+                "course-6": "Professional course in",
+                "course-7": "Introduction to",
+                "course-8": "Object-Oriented Programming in",
+                "course-9": "Web API with"
             }
         },
         "school-2": {
