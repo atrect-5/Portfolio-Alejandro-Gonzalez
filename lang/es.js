@@ -50,7 +50,8 @@ export default {
                 "course-6": "Curso profesional de",
                 "course-7": "Introducción a",
                 "course-8": "Programación Orientada a Objetos en",
-                "course-9": "Web API con"
+                "course-9": "Web API con",
+                "course-10": "Curso profesional de"
             }
         },
         "school-2": {

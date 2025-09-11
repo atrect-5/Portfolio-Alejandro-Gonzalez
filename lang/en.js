@@ -50,7 +50,8 @@ export default {
                 "course-6": "Professional course in",
                 "course-7": "Introduction to",
                 "course-8": "Object-Oriented Programming in",
-                "course-9": "Web API with"
+                "course-9": "Web API with",
+                "course-10": "Professional course in"
             }
         },
         "school-2": {
