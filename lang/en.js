@@ -52,7 +52,8 @@ export default {
                 "course-8": "Object-Oriented Programming in",
                 "course-9": "Web API with",
                 "course-10": "Professional course in",
-                "course-11": "Database Administration Course in"
+                "course-11": "Database Administration Course in",
+                "course-12": "Fundamentals"
             }
         },
         "school-2": {
