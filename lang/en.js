@@ -67,7 +67,8 @@ export default {
             "description":"A leading online education platform specializing in industrial automation, PLC programming, robotics, electrical design, and Industry 4.0.",
             "tools-learned": "Completed courses:",
             "course-list": {
-                "course-1": "PLC, Node-RED, Python, and Industrial Cybersecurity Training"
+                "course-1": "PLC, Node-RED, Python, and Industrial Cybersecurity Training",
+                "course-2": "Ladder Logic Programming for PLCs",
             }
         }
     },

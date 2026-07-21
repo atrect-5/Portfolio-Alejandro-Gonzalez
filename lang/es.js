@@ -67,7 +67,8 @@ export default {
             "description":"Plataforma líder en educación online especializada en automatización industrial, programación de PLC, robótica, diseño eléctrico y la Industria 4.0.",
             "tools-learned": "Cursos aprendidos:",
             "course-list": {
-                "course-1": "Capacitación de PLC, Node-RED, Python y Ciberseguridad Industrial."
+                "course-1": "Capacitación de PLC, Node-RED, Python y Ciberseguridad Industrial.",
+                "course-2": "Programación de Lógica de Escalera para PLCs."
             }
         }
     },
