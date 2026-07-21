@@ -33,7 +33,7 @@ This is the set of technologies I've worked with:
 *   **Databases:**
     *   MongoDB, InfluxDB, MariaDB
 *   **Tools & Platforms:**
-    *   Git, GitHub, Postman
+    *   Git, GitHub, Postman, Docker, PLC
     *   Heroku, Vercel
 
 ## 📫 Get In Touch
